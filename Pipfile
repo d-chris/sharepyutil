@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+sharepy = "*"
+pathlibutil = "*"
+urlpath = "*"
+
+[dev-packages]
+autopep8 = "*"
+pytest = "*"
+pytest-random-order = "*"
+pytest-cov = "*"
+
+[requires]
+python_version = "3.11"

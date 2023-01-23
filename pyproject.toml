@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sharepyutil"
+version = "0.0.0"
+authors = [{ name = "Christoph Dörrer" }]
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/d-chris/sharepyutil"
+"Bug Tracker" = "https://github.com/d-chris/sharepyutil/issues"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+pythonpath = "src"
+testpaths = "test"
+addopts = "--random-order -v -s"
+# addopts = "--cov=src --cov-report=html:test/report"
